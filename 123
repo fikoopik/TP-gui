@@ -76,3 +76,10 @@ local Section = Tab:NewSection("Made By fikop#2262")
 Section:NewKeybind("Close Gui", "Close Gui KeyBind", Enum.KeyCode.U, function()
 	Library:ToggleUI()
 end)
+local Tab = Window:NewTab("misc")
+local Section = Tab:NewSection("Made By fikop#2262")
+Section:NewButton("no cooldown jump", "u can infinity jump (not on air)", function()
+    while true do wait(0)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end
+end)
